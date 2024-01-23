@@ -18,4 +18,5 @@ public class Main {
             System.out.println("Numri eshte tek ! ");
         }
     }
+    
 }
