@@ -7,7 +7,7 @@ public class Switch {
 
     static Random random = new Random();
 
-    public static void main(String[] args) {
+    public static void main() {
         int day = random.nextInt(17);
 
         switch (day) {
@@ -38,8 +38,10 @@ public class Switch {
         switchString();
         shumaNumrave();
         numratQiftTek();
+        Calculator();
 
     }
+
 
     public static void switchString() {
         String emri = "test2";
@@ -90,7 +92,7 @@ public class Switch {
             case 2:
                 if (totali % 2 == 0) {
                     System.out.println("Numri eshte qift");
-                }else {
+                } else {
                     System.out.println("Numri eshte tek ");
                 }
                 break;
@@ -101,7 +103,55 @@ public class Switch {
                 System.out.println("Shuma nuk eshte asnje nga lart");
 
         }
-
     }
 
+    public static void Calculator() {
+        main();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("28: ");
+        double num1 = scanner.nextDouble();
+
+
+        System.out.print("100 (+, -, *, %): ");
+        char operator = scanner.next().charAt(0);
+
+        System.out.print("33: ");
+        double num2 = scanner.nextDouble();
+
+        double result = 0.0;
+
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '%':
+                if (num2 != 0) {
+                    result = num1 % num2;
+                } else {
+                    System.out.println("nuk pjestohet me 0.");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("operator invalid.");
+                return;
+        }
+
+        System.out.println("Rezultati: " + result);
+
+        scanner.close();
+    }
 }
+
+
+
+
+
