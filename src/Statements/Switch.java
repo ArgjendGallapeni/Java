@@ -112,7 +112,6 @@ public class Switch {
         System.out.print("28: ");
         double num1 = scanner.nextDouble();
 
-
         System.out.print("100 (+, -, *, %): ");
         char operator = scanner.next().charAt(0);
 
@@ -125,16 +124,20 @@ public class Switch {
         switch (operator) {
             case '+':
                 result = num1 + num2;
+                System.out.println(result);
                 break;
             case '-':
                 result = num1 - num2;
+                System.out.println(result);
                 break;
             case '*':
                 result = num1 * num2;
+                System.out.println(result);
                 break;
             case '%':
                 if (num2 != 0) {
                     result = num1 % num2;
+                    System.out.println(result);
                 } else {
                     System.out.println("nuk pjestohet me 0.");
                     return;
