@@ -10,5 +10,12 @@ public class ForloopHomework {
 
         }
 
-    }
+        public static void numrat(){
+            for (int i = 1; i <= 100; i++) {
+                if (i > 50 && i % 6 == 0) {
+                    System.out.println("Numri : " + i);
+                }
+
+            }
+            }
 }
