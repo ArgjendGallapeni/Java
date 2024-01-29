@@ -20,4 +20,5 @@ public class Forloop {
             break; //E Largon nga forloop
         }
     }
+
 }
