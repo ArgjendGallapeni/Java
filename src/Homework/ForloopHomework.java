@@ -12,6 +12,7 @@ public class ForloopHomework {
         numrat();
         mesatarja();
         faktoriel();
+        tabelashumzimit();
     }
 
     public static void numrat() {
@@ -30,6 +31,18 @@ public class ForloopHomework {
             shuma = shuma + i;
         }
         System.out.println("Mesatarja : " + shuma / 100);
+    }
+
+
+
+    public static void tabelashumzimit(){
+        for (int i = 1; i <= 10; i++) {
+            for (int n = 1; n <= 10; n++) {
+                int product = i * n;
+                System.out.print(String.format("%4d", product));
+            }
+            System.out.println();
+            }
     }
 
     public static void faktoriel() {
